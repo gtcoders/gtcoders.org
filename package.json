@@ -1,0 +1,25 @@
+{
+  "name": "gtcoders.org",
+  "title": "GTCoders sitio oficial",
+  "version": "0.1.0",
+  "homepage": "http://gtcoders.org",
+  "author": "GTCoders",
+  "license": "GPL-3.0",
+  "description": "GTCoders sitio oficial",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/gtcoders/gtcoders.org.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gtcoders/gtcoders.org/issues"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-concat": "0.1.3",
+    "grunt-contrib-cssmin": "0.6.1",
+    "grunt-contrib-stylus": "0.21.*",
+    "grunt-stylint": "0.*",
+    "grunt-stylint": "0.*",
+    "grunt-html" : "5.*"
+  }
+}
