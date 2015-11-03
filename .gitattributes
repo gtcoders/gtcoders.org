@@ -1,0 +1,5 @@
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JS
+*.styl linguist-vendored
+*.json linguist-vendored
