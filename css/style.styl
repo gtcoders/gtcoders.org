@@ -1,0 +1,140 @@
+/*
+ * gtcoders - Sitio web oficial
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * CSS Version 3
+ *
+ * @author   Luis Gdonis <mail@ldonis.com>
+ * @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+ * @version  GIT: 0.1.0-alpha
+ * @link     http://gtcoders.org
+ */
+
+ /*
+  *  Se incluyen componentes http://responsivecat.com
+  *  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~ ~
+  *  @author Luis Gdonis <mail@ldonis.com>
+  *  @since  0.1.0-alpha
+  */
+@require '../bower_components/ResponsiveCat/core/base/rbase.styl'
+@require '../bower_components/ResponsiveCat/core/nav/rnav.styl'
+@require '../bower_components/ResponsiveCat/core/helper/rcenter.styl'
+
+/*
+ *  Fuentes
+ */
+@font-face
+        font-family 'roboto300'
+        src url('../font/roboto300.woff') format('woff')
+        font-weight 300
+
+@font-face
+    font-family 'roboto100'
+    src url('../font/roboto100.woff') format('woff')
+    font-weight 100
+
+@font-face
+    font-family 'fontello'
+    src url('../font/fontello/fontello.eotO?21141559')
+    src url('../font/fontello/fontello.eot?21141559#iefix') format('embedded-opentype'),
+    url('../font/fontello/fontello.woff?21141559') format('woff'),
+    url('../font/fontello/fontello.ttf?21141559') format('truetype'),
+    url('../font/fontello/fontello.svg?21141559#fontello') format('svg')
+    font-weight normal
+    font-style normal
+
+/*
+ *  Estilos base para landing page
+ *  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~
+ *  @author Luis Gdonis <mail@ldonis.com>
+ *  @since  0.1.0-alpha
+ */
+ html
+ body
+     font-family 'roboto300'
+
+
+#landing
+
+    /*
+     *  Estilos base para landing page
+     *  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~
+     *  @author Luis Gdonis <mail@ldonis.com>
+     *  @since  0.1.0-alpha
+     */
+    header
+        height 100vh
+
+        //-> Titulo
+        h1
+            font-family 'roboto100'
+
+        //-> Slogan
+        h2
+            font-size 1.2rem
+
+.blue
+    color #0170BA
+    
+/*
+ *  Pie de pagina generico
+ *  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~
+ *  @author Luis Gdonis <mail@ldonis.com>
+ *  @since  0.1.0-alpha
+ */
+footer
+    padding 75px 0 50px
+    color #d4d4d4
+    background-color #1d1d1d
+    text-align center
+    font-size 1.2rem
+
+    .copy
+        font-size 0.9rem
+
+    .rnav
+
+        a
+            font-size 2.2rem
+
+            &:hover
+                color #0170BA
+                transition()
+
+/*
+ *  Fontello
+ */
+[class^="icon-"]:before
+[class*=" icon-"]:before
+    font-family "fontello"
+    font-style normal
+    font-weight normal
+    speak none
+    display inline-block
+    text-decoration inherit
+    width 1em
+    margin-right .2em
+    text-align center
+    font-variant normal
+    text-transform none
+    line-height 1em
+    margin-left .2em
+
+
+.icon-code:before { content: '\e801'; } /* '' */
+.icon-docs:before { content: '\e80b'; } /* '' */
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-globe:before { content: '\e802'; } /* '' */
+.icon-github:before { content: '\e809'; } /* '' */
