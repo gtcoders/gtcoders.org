@@ -1,49 +1,48 @@
 module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        
+
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
-        ///* Deployment tasks
+        ///* Development tasks
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
-        
+
         // Compila codigo stylus a css
         stylus:{
             compile:{
                 options:{ 'compress': false },
                 files:{
+                    'css/style.css' : 'css/style.styl',
                 }
             }
         },
-        
+
+        ///* ~·~ ~·~ ~·~ ~·~ ~·~
+        ///* Deployment tasks
+        ///* ~·~ ~·~ ~·~ ~·~ ~·~
+
         // Concatena hojas de estilo
         concat: {
             main: {
+                src:['css/style.css'],
+                dest:'css/style.full.css'
             }
         },
-        
+
         // MInifica hojas de estilo
         cssmin: {
-            main: {}
+            main: { src: 'css/style.full.css',    dest: 'css/style.min.css' }
         },
 
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
-        ///* Development tasks
+        ///* Watcher tasks
         ///* ~·~ ~·~ ~·~ ~·~ ~·~
-        
-        // Linter para stylus
-        stylint: {
-            options: {
-              configFile: false,
-              config: {colons: 'never'}
+        watch: {
+            stylus:{
+                files: ['css/style.styl'],
+                tasks: ['stylus:compile']
             },
-            src: ['']
-          }
-        
-        // LInter para html
-        htmllint: {
-            files: ['']
-        }
-          
+        },
+
     });
 
     ///* ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
@@ -52,8 +51,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-stylint');
-    grunt.loadNpmTasks('grunt-html');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     ///* ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
     ///* Running/defining deployment tasks
@@ -63,5 +61,6 @@ module.exports = function (grunt) {
     ///* ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
     ///* Running/defining Development tasks
     ///* ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~ ~·~
-    grunt.registerTask('dev',['stylint', 'htmllint']);
+    grunt.registerTask('dev',['stylus:compile']);
+
 };
