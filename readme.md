@@ -1,6 +1,6 @@
 !['GTCoders'](http://gtcoders.org/gtcoders-logo.png "GTCoders")
 
-Somos una comunidad de desarrolladores y entusiastas de la tecnologica residentes en Guatemala,
+Somos una comunidad Guatemalteca de desarrolladores y entusiastas de la tecnologica.
 
 ### Sitio web y documentación
 ----------------
