@@ -1,4 +1,4 @@
-!['GTCoders'](http://gtcoders.org/gtcoders-logo.png "GTCoders")
+!['GTCoders'](http://gtcoders.org/img/gtcoders-logo.png "GTCoders")
 
 Somos una comunidad Guatemalteca de desarrolladores y entusiastas de la tecnologica.
 
@@ -8,6 +8,8 @@ Somos una comunidad Guatemalteca de desarrolladores y entusiastas de la tecnolog
 Puedes contactarnos y unirte a nosotros
 
 * Sitio web: [http://gtcoders.org/](http://gtcoders.org/)
+
+* Grupo en Facebook: [https://www.facebook.com/groups/1657107531214309/](https://www.facebook.com/groups/1657107531214309/)
 
 * Slack: [https://gtcoders.slack.com/](https://gtcoders.slack.com/)
 
