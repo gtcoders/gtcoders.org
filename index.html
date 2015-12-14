@@ -5,22 +5,44 @@
     <title>gtcoders | Software developers - Guatemala</title>
     <meta name="viewport" content="width=device-width"/>
     <link rel='stylesheet' href='css/style.min.css' type='text/css' media='all'/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/typedjs/dist/typed.min.js"></script>
+    <script>
+    $(function(){
+        $(".element").typed({
+            strings: [
+                "Emprendedores",
+                "Entusiastas",
+                "Software developers"],
+            typeSpeed: 0,
+            backDelay: 1300
+        });
+    });
+    </script>
 </head>
 <body id="landing">
 
-    <header class="center vertical">
+    <header class="rcenter vertical">
+
+        <img alt="gtcoders logo" src="img/gtcoders-logo.png">
 
         <h1>gtcoders</h1>
-        <h2>Software developers - Guatemala</h2>
+
+        <div>
+            <span class="element"></span>
+        </div>
 
     </header>
 
-    <footer>
+    <section>
 
-        <p>
-            Hecho con <i class="icon-heart blue"></i>
-            por <a href="#" class="blue">gtcoders.org</a>
-        </p>
+        <article>
+            Sitio web en construccion
+        </article>
+
+    </section>
+
+    <footer>
 
         <nav class="rnav">
             <ul>
@@ -28,6 +50,11 @@
                 <li><a href="http://www.meetup.com/es/gtcoders/"><i class="icon-code"></i></a></li>
             </ul>
         </nav>
+
+        <p>
+            Hecho con <i class="icon-heart blue"></i>
+            por <a href="#" class="blue">gtcoders.org</a>
+        </p>
 
         <p class="copy">
             <a href="http://www.visitguatemala.com/" class="blue">Guatemala</a>

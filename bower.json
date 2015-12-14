@@ -9,7 +9,9 @@
     "description": "GTCoders sitio oficial",
     "license": "MIT",
     "homepage": "http://gtcoders.org",
-    "devDependencies": {
-        "ResponsiveCat" : "master"
+    "dependencies": {
+        "ResponsiveCat" : "master",
+        "typedjs" : "1.1.*",
+        "jquery" : "2.*"
     }
 }

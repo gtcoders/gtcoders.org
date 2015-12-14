@@ -39,7 +39,7 @@ module.exports = function (grunt) {
         watch: {
             stylus:{
                 files: ['css/style.styl'],
-                tasks: ['stylus:compile']
+                tasks: ['stylus:compile','concat:main','cssmin:main']
             },
         },
 

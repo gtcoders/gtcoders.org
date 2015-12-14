@@ -28,9 +28,9 @@
   *  @author Luis Gdonis <mail@ldonis.com>
   *  @since  0.1.0-alpha
   */
-@require '../bower_components/ResponsiveCat/core/base/rbase.styl'
+@require '../bower_components/ResponsiveCat/core/base/rcat.base.css'
 @require '../bower_components/ResponsiveCat/core/nav/rnav.styl'
-@require '../bower_components/ResponsiveCat/core/helper/rcenter.styl'
+@require '../bower_components/ResponsiveCat/core/helper/rhelper.styl'
 
 /*
  *  Fuentes
@@ -65,6 +65,8 @@
  body
      font-family 'roboto300'
 
+.blue
+    color #0170BA
 
 #landing
 
@@ -76,18 +78,37 @@
      */
     header
         height 100vh
+        background-image url('../img/antigua_guatemala.png')
+        background-size cover
+        background-position top center
+
+        > div
+            display block
+
+            span
+                font-size 1.3rem
+
+        img
+            width 100%
+            max-width 125px
+            position absolute
+            top 10px
+            left 10px
 
         //-> Titulo
         h1
             font-family 'roboto100'
-
         //-> Slogan
         h2
             font-size 1.2rem
 
-.blue
-    color #0170BA
-    
+section
+
+    article
+        font-size 2.23rem
+        text-align center
+        padding 75px 0
+
 /*
  *  Pie de pagina generico
  *  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~  ~ · ~
@@ -95,7 +116,7 @@
  *  @since  0.1.0-alpha
  */
 footer
-    padding 75px 0 50px
+    padding 50px 0 50px
     color #d4d4d4
     background-color #1d1d1d
     text-align center
@@ -138,3 +159,24 @@ footer
 .icon-heart:before { content: '\e800'; } /* '' */
 .icon-globe:before { content: '\e802'; } /* '' */
 .icon-github:before { content: '\e809'; } /* '' */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes {blink}
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+
+@-webkit-keyframes {blink}
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+
+@-moz-keyframes {blink}
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
