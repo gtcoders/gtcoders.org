@@ -2,4 +2,4 @@
 ------
 * Roberto Oliveros <robertooliveros@mac.com>
 * Luis Gdonis <http://ldonis.com>
-* Edwin Xico <http://http://xicoofficial.co/>
+* Edwin Xico <http://xicoofficial.co/>
